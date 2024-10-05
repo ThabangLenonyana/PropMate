@@ -1,35 +1,64 @@
+  /* Style the body to center content and apply background color */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url(img/headingBg2.jpg); /* Light grayish-blue background */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the search container in the middle of the page */
+.search-container {
+    text-align: center;
+    padding: 20px;
+ /* White background for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    border-radius: 8px;
+    max-width: 400px;
+    margin-left: 20px;
+    margin-right: 10px;
+    width: 100%;
+    display: inline-block;
+}
+
+/* Style the search input */
+#search-input {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px; /* Add space below the input */
+}
+
+/* Style the search button */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #1434A4;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Change button color on hover */
+button:hover {
+    background-color: #0047AB;
+}
+
 /* Set the map height and width */
 #map {
     height: 80vh;
     width: 100%;
     margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
     display: none; /* Map is initially hidden */
-}
-
-/* Simple container for the search bar */
-.search-container {
-    text-align: center;
-    margin: 20px;
-}
-
-#search-input {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-}
-
-button {
-    padding: 10px 15px;
-    font-size: 16px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-}
-
-button:hover {
-    background-color: #45a049;
 }
