@@ -3,18 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Places API Search</title>
+    <title>Google Places API - Search and Nearby Locations</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <!-- Include Google Maps API -->
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYfgSyhHI9I7R2eZZEtk-2Q8yVT0f9Yjs&libraries=places&callback=initMap"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAYfgSyhHI9I7R2eZZEtk-2Q8yVT0f9Yjs&libraries=places&callback=initMap"></script>
 </head>
 <body>
     <div class="search-container">
-        <input type="text" id="search-input" placeholder="Search for places...">
+        <input type="text" id="search-input" placeholder="Search for a place...">
         <button onclick="searchPlaces()">Search</button>
     </div>
 
+    <!-- Map container -->
     <div id="map"></div>
 
     <script src="script.js"></script>

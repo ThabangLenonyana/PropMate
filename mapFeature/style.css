@@ -3,6 +3,7 @@
     height: 80vh;
     width: 100%;
     margin-top: 20px;
+    display: none; /* Map is initially hidden */
 }
 
 /* Simple container for the search bar */
