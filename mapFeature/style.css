@@ -1,29 +1,29 @@
-  /* Style the body to center content and apply background color */
+/* Style the body to center content and apply background image */
 body {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
     margin: 0;
-    background-image: url(img/headingBg2.jpg); /* Light grayish-blue background */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
+    background-image: url(img/headingBg2.jpg); /* Background image */
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     font-family: Arial, sans-serif;
+    height: auto; /* Allow the body to grow vertically */
+    min-height: 100vh;
+    overflow-y: scroll; /* Enable vertical scroll on the page */
+    margin-bottom: 40px;
 }
 
-/* Center the search container in the middle of the page */
+/* Position search-container slightly above the middle */
 .search-container {
     text-align: center;
     padding: 20px;
- /* White background for the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     border-radius: 8px;
     max-width: 400px;
-    margin-left: 20px;
-    margin-right: 10px;
     width: 100%;
-    display: inline-block;
+    margin-top: 15vh; /* Initial position slightly above the middle */
+    z-index: 1; /* Ensure it appears on top of the map initially */
 }
 
 /* Style the search input */
@@ -33,7 +33,7 @@ body {
     font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    margin-bottom: 10px; /* Add space below the input */
+    margin-bottom: 10px;
 }
 
 /* Style the search button */
@@ -55,10 +55,12 @@ button:hover {
 
 /* Set the map height and width */
 #map {
-    height: 80vh;
-    width: 100%;
-    margin-top: 20px;
-    margin-right: 20px;
-    margin-left: 10px;
-    display: none; /* Map is initially hidden */
+    height: 80vh; /* Make the map take 80% of the viewport height */
+    width: calc(100% - 40px); /* Add margin to avoid touching page sides */
+    max-width: 1200px;
+    margin-top: 20px; /* Space between search container and map */
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for the map */
+    display: none; /* Initially hidden */
 }
