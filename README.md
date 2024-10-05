@@ -1,4 +1,4 @@
-# PropMate
+# PropWise
 
 ## Refined Problem Statement:
 Many South African property platforms, such as Property24, provide standard property listings with basic details like price, size, and location. However, these platforms often lack critical information necessary for potential buyers and tenants to make informed, lifestyle-based decisions about whether a property and its surrounding area are suitable. Users, especially first-time buyers and renters, frequently have to search multiple sources to find insights about crime rates, neighborhood demographics, public services, environmental risks, and property ownership history ​(Daily Investor)​(Seeff Blog).
